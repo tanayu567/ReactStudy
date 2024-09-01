@@ -28,9 +28,19 @@
         );
       }
 
+      function AboutPage() {
+        return (
+          <>
+            <h1>About</h1>
+            <p>Hello there.<br />How do you do?</p>
+          </>
+        );
+      }
+
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
-      root.render(<MyApp />);
+      // root.render(<MyApp />);
+      root.render(<AboutPage />);
 
 
     </script>
