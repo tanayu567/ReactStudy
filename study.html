@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <title>Hello World</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -15,7 +16,7 @@
 
       function MyButton() {
         return (
-          <button>I'm button</button>
+          <button className='button'>I'm button</button>
         );
       }
 
@@ -39,8 +40,8 @@
 
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
-      // root.render(<MyApp />);
-      root.render(<AboutPage />);
+      root.render(<MyApp />);
+      // root.render(<AboutPage />);
 
 
     </script>
