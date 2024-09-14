@@ -24,7 +24,8 @@
       function MyApp() {
         return (
           <div>
-            <h1>Welcome to my app</h1>
+            <h1>Counters that update separately</h1>
+            <MyButton />
             <MyButton />
           </div>
         );
@@ -87,10 +88,10 @@
 
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
-      // root.render(<MyApp />);
+      root.render(<MyApp />);
       // root.render(<AboutPage />);
       // root.render(<Profile />);
-      root.render(<ShoppingList />);
+      // root.render(<ShoppingList />);
 
 
     </script>
