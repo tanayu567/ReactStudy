@@ -61,11 +61,35 @@
         );
       }
 
+      const production = [
+        {title: 'Cabbage', isFruit: false, id: 1},
+        {title: 'Garlic', isFruit: false, id: 2},
+        {title: 'Apple', isFruit: true, id: 3},
+      ];
+
+      function ShoppingList() {
+        const listItem = production.map(product =>
+          <li
+            key={product.id}
+            style={{
+              color: product.isFruit ? 'magenta' : 'darkgreen'
+             }}
+          >
+            {product.title}
+          </li>
+        );
+
+        return (
+          <ul>{listItem}</ul>
+        )
+      }
+
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
       // root.render(<MyApp />);
       // root.render(<AboutPage />);
-      root.render(<Profile />);
+      // root.render(<Profile />);
+      root.render(<ShoppingList />);
 
 
     </script>
